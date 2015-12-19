@@ -10,6 +10,9 @@ class Ingredient
   end
 end
 
+class Recipe
+end
+
 ingredient = Ingredient.new(47.0, "lb(s)", "Brussels Sprouts")
 
 puts ingredient.summary
