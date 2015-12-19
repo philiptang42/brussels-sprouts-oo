@@ -11,6 +11,11 @@ class Ingredient
 end
 
 class Recipe
+  def initialize(name, instructions, ingredients)
+    @name = name
+    @instructions = instructions
+    @ingredients = ingredients
+  end
 end
 
 ingredient = Ingredient.new(47.0, "lb(s)", "Brussels Sprouts")
