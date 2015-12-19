@@ -6,7 +6,7 @@ class Ingredient
   end
 
   def summary
-    puts "#{quantity} #{unit} #{name}"
+    "#{@quantity} #{@unit} #{@name}"
   end
 end
 
