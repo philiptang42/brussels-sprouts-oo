@@ -18,7 +18,17 @@ class Recipe
   end
 
   def summary
-    
+    puts "Name: #{@name}"
+    print "\n"
+    puts "Ingredients"
+      @ingredients.each do |thing|
+      puts "-" " " "#{thing.summary}"
+      end
+    print "\n"
+    puts "Instructions"
+      @instructions.each do |instruction|
+      puts "-" " " "#{instruction}"
+      end
   end
 end
 
@@ -49,4 +59,4 @@ puts ingredient.summary
 
 recipe = Recipe.new(name, instructions, ingredients)
 
-puts recipe.summary
+recipe.summary
