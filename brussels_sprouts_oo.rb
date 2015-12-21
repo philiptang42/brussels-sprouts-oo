@@ -16,6 +16,10 @@ class Recipe
     @instructions = instructions
     @ingredients = ingredients
   end
+
+  def summary
+    
+  end
 end
 
 ingredient = Ingredient.new(47.0, "lb(s)", "Brussels Sprouts")
@@ -42,3 +46,7 @@ instructions = [
     ]
 
 puts ingredient.summary
+
+recipe = Recipe.new(name, instructions, ingredients)
+
+puts recipe.summary
